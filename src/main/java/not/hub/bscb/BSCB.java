@@ -17,7 +17,7 @@ public final class BSCB extends JavaPlugin implements Listener {
     public void onEnable() {
 
         // config start
-        getConfig().addDefault("log-to-console", false);
+        getConfig().addDefault("log-to-console", true);
         getConfig().options().copyDefaults(true);
         saveConfig();
         log = getConfig().getBoolean("log-to-console");
