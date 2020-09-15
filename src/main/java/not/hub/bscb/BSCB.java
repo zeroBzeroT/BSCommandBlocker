@@ -36,7 +36,6 @@ public final class BSCB extends JavaPlugin implements Listener {
             return;
         }
 
-        System.out.println(e.getSender().getClass().getCanonicalName());
         e.setCancelled(true);
 
         if (log) {
