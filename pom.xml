@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <name>BSCommandBlocker</name>
-    <description>Block Sign and Book Commands by blocking ProxiedNativeCommandSender Commands</description>
+    <description>Blocks sign commands by canceling events caused by bukkits ProxiedNativeCommandSender</description>
 
     <properties>
         <java.version>1.8</java.version>
