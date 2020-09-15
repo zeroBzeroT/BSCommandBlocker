@@ -8,7 +8,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class BSCB extends JavaPlugin implements Listener {
 
-    boolean log;
+    @SuppressWarnings("SpellCheckingInspection")
+    private static final String PROXIED_NATIVE_COMMAND_SENDER = "ProxiedNativeCommandSender";
+
+    private boolean log;
 
     @Override
     public void onEnable() {
@@ -32,7 +35,7 @@ public final class BSCB extends JavaPlugin implements Listener {
 
         // this is a dirty hack to check if the sender class is e.g.
         // org.bukkit.craftbukkit.v1_12_R1.command.ProxiedNativeCommandSender
-        if (!e.getSender().getClass().getSimpleName().equals("ProxiedNativeCommandSender")) {
+        if (!e.getSender().getClass().getSimpleName().equals(PROXIED_NATIVE_COMMAND_SENDER)) {
             return;
         }
 
