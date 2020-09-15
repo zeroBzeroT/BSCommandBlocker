@@ -1,0 +1,7 @@
+name: ${project.name}
+description: {project.description}
+version: ${project.version}
+authors: [blockparole]
+main: not.hub.bscb.BSCB
+prefix: BSCB
+load: STARTUP
