@@ -5,3 +5,4 @@ authors: [blockparole]
 main: not.hub.bscb.BSCB
 prefix: BSCB
 load: STARTUP
+api-version: 1.12
